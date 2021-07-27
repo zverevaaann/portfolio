@@ -1,0 +1,226 @@
+.section-timeline {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./../img/images/timeline/timeline-lines.jpg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+    padding-top: 126px;
+    padding-bottom: 153px;
+    z-index: -2;
+    overflow: hidden;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            padding-top: 91px;
+            padding-bottom: 89px;
+            background-image: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            padding-top: 61px;
+            padding-bottom: 65px;
+        }
+}
+
+.section-timeline__title {
+    text-align: center;
+    margin-bottom: 153px;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        margin-bottom: 52px;
+    }
+
+    .title-2 {
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 38px;
+        }  
+    }
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    min-height: 203px;
+    text-align: right;
+    padding-right: 79px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-right: 61px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 100%;
+        padding-left: 101px;
+        padding-right: 0;
+        text-align: left;
+        min-height: 160px;
+    }
+}
+    
+.timeline-item:not(.timeline-item:last-of-type)::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: 0;
+    top: 94px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: #e1eef4;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        left: 35px;
+    }
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 79px;
+    text-align: left;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-left: 105px;
+    }
+
+    .timeline-icon {
+        left: -37px;
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            left: 0;
+        }
+    }
+}
+
+.timeline-item:first-of-type:before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -77px;
+    width: 4px;
+    height: 57px;
+    border-radius: 2px;
+    background-color: #e1eef4;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -2px;
+}
+
+.timeline-item + .timeline-item {
+    margin-top: 20px;
+}
+
+.timeline-item__text {
+    padding-top: 26px;
+    cursor: pointer;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        padding-top: 0;
+    }
+
+    .title-4 {
+        margin-bottom: 8px;
+        font-size: 26px;
+        font-weight: 800;
+
+            /* Tablet */
+        @media (max-width: 1199px) {
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }  
+}
+
+.timeline-item__text:hover .bottom-line--evaluate::after {
+    background-color: #ea655f;
+}
+
+.timeline-item__text:hover .bottom-line--schedule::after {
+    background-color: #ea655f;
+}
+
+.timeline-item__text:hover .bottom-line--access::after {
+    background-color: #ea655f;
+}
+
+.timeline-item__text:hover .bottom-line--work::after {
+    background-color: #ea655f;
+}
+
+.timeline-item__text:hover .bottom-line--review::after {
+    background-color: #ea655f;
+}
+
+.timeline-item__description {
+    margin-bottom: 14px;
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.38;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.43;
+        margin-bottom: 8px;
+    }
+}
+
+.timeline-item__time {
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: 700;  
+    line-height: 1.2; 
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    right: -37px;
+    width: 74px;
+    height: 74px;
+    box-shadow: 2px 3px 35px rgba(0, 112, 187, 0.35);
+    border-radius: 28px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        left: 0;
+    }
+}

@@ -1,0 +1,76 @@
+.title-1 {
+    color: $mainColor;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 1.05;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 52px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 42px;
+    }
+}
+
+.title-2 {
+    color: $mainColor;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 52px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 42px;
+    }
+}
+
+.title-3 {
+    color: $mainColor;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 32px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+.title-4 {
+    color: $mainColor;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 24px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.title-5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
+}
+

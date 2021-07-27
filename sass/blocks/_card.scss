@@ -1,0 +1,110 @@
+.card {
+    width: 556px;
+    transition: .5s;
+    overflow: hidden;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 338px;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        width: 290px;
+    }
+}
+
+.card:hover {
+    .card__image button {
+        transform: translate(-50%, -50%);
+    }
+
+    .card__image:after {
+        transform: translateX(0);
+    }
+
+    .card__title .bottom-line--hover:after {
+        width: 410px;
+        height: 3px;
+    }
+}
+
+.card__image {
+    position: relative;
+    margin-bottom: 25px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 21px;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -250px);
+        z-index: 2;
+        height: 52px;
+        border-radius: 26px;
+        border: 3px solid #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 46px;
+        font-weight: 800;
+        background-color: #fff;
+        color: #ea736d;
+        font-size: 22px;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+.card__image:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 220, 77, 0.85);
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+.card__title .title-4 {
+    margin-bottom: 10px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 13px;
+    }
+}
+
+.card__text {
+    color: $mainColor;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+    
+    /* Mobile */
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.card__title .bottom-line--hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ea655f;
+    transition: .5s;
+}

@@ -1,0 +1,211 @@
+.bottom-line {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 5px;
+        left: -7px;
+        width: 70px;
+        height: 12px;
+        background-color: $accentColor;
+    }
+
+    &--name::after {
+        width: 245px;
+        bottom: 6px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 148px;
+            bottom: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 123px;
+            bottom: -1px;
+        }
+    }
+
+    &--surname::after {
+        width: 383px;
+        bottom: 6px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 227px;
+            bottom: 1px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 187px;
+            bottom: -1px;
+        }
+    }
+
+    &--portfolio::after {
+        width: 385px;
+        height: 12px;
+        bottom: 7px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 318px;
+            bottom: 6px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 260px;
+            bottom: 3px;
+        }
+    }
+
+    &--timeline::after {
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 7px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 405px;
+            bottom: 6px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 295px;
+            bottom: 3px;
+        }
+    }
+
+    &--evaluate::after {
+        width: 230px;
+        height: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2px;
+
+        transition: 0.3s ease-in;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &--schedule::after {
+        width: 350px;
+        height: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2px;
+
+        transition: 0.3s ease-in;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &--access::after {
+        width: 388px;
+        height: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2px;
+
+        transition: 0.3s ease-in;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    
+    &--work::after {
+        width: 332px;
+        height: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2px;
+
+        transition: 0.3s ease-in;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    
+    &--review::after {
+        width: 363px;
+        height: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2px;
+        
+        transition: 0.3s ease-in;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &--contacts::after{
+        width: 330px;
+        height: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 7px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 275px;
+            bottom: 6px;
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            width: 225px;
+            bottom: 3px;
+        }
+    }
+}
+
+.bottom-line-nav {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 6px;
+        background-color: $accentColor;
+
+        transition: 0.3s ease-in;
+    }
+}
+
+.bottom-line-nav:hover::after {
+    width: 100%;
+}
+
+
+
